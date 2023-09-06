@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Controle de Metragem</title>
+</head>
+<body>
+    <section id="section">
+        <form action="https://sheetdb.io/api/v1/ftdi4fjg7daoj" id="form">
+            <h1>Controle de metragem dos candidatos</h1>
+            <input  id="nome" type="text" name="Nome" id="" placeholder="Nome do candidato" class="values">
+            <select id="motivo" name="" id="" class="values">
+                <option selected disabled value="">Motivo da advertência</option>
+                <optgroup label="Leve">
+                    <option value="2">Atraso em reunião, sem justificativa plausível</option>
+                    <option value="2">Atraso em envio de informações necessárias para o andamento do processo seletivo</option>
+                    <option value="2">Câmera desligada durante reuniões do processo seletivo</option>
+                </optgroup>
+                <optgroup label="Moderado">
+                    <option value="4">Atraso em tarefas que prejudique o andamento das atividades do projeto trainee</option>
+                    <option value="4">Câmera desligada em treinamentos obrigatórios</option>
+                    <option value="4">Atraso em treinamentos obrigatórios, sem justificativa plausível</option>
+                    <option value="4">Falta em reunião, sem justificativa plausível</option>
+                </optgroup>
+                <optgroup label="Grave">
+                    <option value="6">Atraso em reunião com cliente, sem justificativa plausível</option>
+                    <option value="6">Faltar em treinamentos obrigatórios, sem justificativa plausível</option>
+                    <option value="6">Permanecer sem vestimenta adequada nos ambientes de avaliação</option>
+                    <option value="4">Câmera desligada em reunião com cliente</option>
+                </optgroup>
+                <optgroup label="Gravissima">
+                    <option value="10">Deixar de cumprir tarefas que sejam importantes para a execução do projeto trainee</option>
+                    <option value="10">Faltar reunião com cliente, sem justificativa plausível</option>
+                </optgroup>
+                <optgroup label="Eliminatória">
+                    <option value="12">Falta de postura e uso de palavras pejorativas em uma reunião com cliente</option>
+                    <option value="12">Usar palavras pejorativas com algum candidato ou membro da Focus com o intuito de ofendê-lo e desrespeitá-lo</option>
+                    <option value="12">Comportamento de caráter anti profissional durante qualquer atividade do processo seletivo</option>
+                </optgroup>
+            </select>
+
+            <input id="data" type="date" name="Data" id="" class="values">
+            <input type="text" name="Advertencia" style="display: none;" id="advertencia">
+            <input type="text" name="Motivo" style="display: none;" id="motivo2">
+            <button type="submit" id="button">Enviar</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
