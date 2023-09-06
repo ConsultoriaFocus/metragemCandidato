@@ -22,9 +22,8 @@ function verificaFormulario(){
         let aux2 = data.value;
         let aux = motivo.selectedOptions[0];
         motivo2.value = aux.textContent;
-        advertencia2();
         data.value = aux2;
-        
+        advertencia2();
         const dataForm = new FormData(formulario);
         fetch(formulario.action, {
             method: "POST",
